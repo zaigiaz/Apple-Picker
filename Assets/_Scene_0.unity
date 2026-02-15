@@ -415,6 +415,10 @@ PrefabInstance:
       propertyPath: applePrefab
       value: 
       objectReference: {fileID: 1453611749139752672, guid: 553b6faac9b2ccfbc953fd0d64e024a1, type: 3}
+    - target: {fileID: -9101983727335267782, guid: 77f7b35bd044fe82195369410cc1b27c, type: 3}
+      propertyPath: BranchPrefab
+      value: 
+      objectReference: {fileID: 7820330691990559336, guid: 96b5b8078be24bcc081cab0b40cd55e7, type: 3}
     - target: {fileID: 15990667079037002, guid: 77f7b35bd044fe82195369410cc1b27c, type: 3}
       propertyPath: m_Name
       value: AppleTree

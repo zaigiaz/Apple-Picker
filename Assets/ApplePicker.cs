@@ -9,7 +9,7 @@ public class ApplePicker : MonoBehaviour
     public GameObject basketPrefab;
     public int numBaskets = 4;
     public float basketBottomY = -14f;
-    public float basketSpacingY = 3f;
+    public float basketSpacingY = 2f;
     public List <GameObject> basketlist;
 
     // Start is called before the first frame update
