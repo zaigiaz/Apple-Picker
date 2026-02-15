@@ -7,9 +7,9 @@ public class ApplePicker : MonoBehaviour
 {
 
     public GameObject basketPrefab;
-    public int numBaskets = 3;
+    public int numBaskets = 4;
     public float basketBottomY = -14f;
-    public float basketSpacingY = 2f;
+    public float basketSpacingY = 3f;
     public List <GameObject> basketlist;
 
     // Start is called before the first frame update
@@ -36,9 +36,11 @@ public class ApplePicker : MonoBehaviour
 	GameObject tBasketGo = basketlist[basketIndex];
 	basketlist.RemoveAt(basketIndex);
 	Destroy(tBasketGo);
+      
+	if (basketlist.Count == 0)
+        {
+	    SceneManager.LoadScene("GameOver");
+        }
 
-	if(basketlist.Count == 0) {
-	    SceneManager.LoadScene("_Scene_0");
-	}
     }
 }
